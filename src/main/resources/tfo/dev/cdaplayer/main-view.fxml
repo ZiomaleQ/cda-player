@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.media.MediaView?>
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="tfo.dev.cdaplayer.MainViewController">
+    <GridPane alignment="CENTER">
+        <TextField GridPane.columnIndex="1" fx:id="url"/>
+        <Button GridPane.columnIndex="2" text="Play!" onAction="#onPlayButtonClick"/>
+    </GridPane>
+    <GridPane alignment="CENTER">
+        <MediaView fx:id="mediaView"/>
+    </GridPane>
+</VBox>
